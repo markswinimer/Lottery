@@ -12,9 +12,12 @@ class Lottery extends Component {
     return(
       <div className="Lottery">
         <h1>Lottery</h1>
-        <LotteryBall />
-        <LotteryBall />
-        <LotteryBall />
+        <div className="LotteryBalls">
+          <LotteryBall />
+          <LotteryBall />
+          <LotteryBall />
+        </div>
+        <button className="LotteryButton">Draw Numbers</button>
       </div>
     )
   }
