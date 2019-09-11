@@ -1,0 +1,33 @@
+/* COLORS */
+/* Orange: #FF9900
+Charcoal: #424242
+Light-Grey: #E9E9E9
+Dark-Grey: #BCBCBC
+Blue: #3299BB
+
+font-family: 'Allerta', sans-serif;
+font-family: 'Sofia', cursive; */
+
+.Lottery {
+  font-family: 'Allerta', sans-serif;
+  color: #3299BB;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  min-height: 100px;
+  margin: 20%;
+}
+
+.LotteryBall {
+  font-weight: bold;
+  color: white;
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 5% auto;
+  text-align: center;
+  background-color: #FF9900;
+  font-family: 'Sofia', cursive;
+  text-align: vertical;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottery from './Lottery';
+import './Lottery.css';
 import './App.css';
 
 function App() {
