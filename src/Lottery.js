@@ -5,19 +5,35 @@ class Lottery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // STATE HERE
+      numbers: ['','','','','','']
     }
+    this.handleClick = this.handleClick.bind(this)
   }
+
+  handleClick() {
+    let randNumbers = [];
+    let i = 0;
+    while(i < this.state.numbers.length){
+      randNumbers.push(Math.floor(Math.random() * this.props.max));
+      i++;
+    }
+    this.setState( { numbers: randNumbers } );
+  }
+
   render() {
+    let i = 0;
+    let lotteryBalls = [];
+    for (i = 0; i < this.state.numbers.length; i++) {
+      lotteryBalls.push(<LotteryBall number={this.state.numbers[i]}/>)
+    }
+
     return(
       <div className="Lottery">
         <h1>Lottery</h1>
         <div className="LotteryBalls">
-          <LotteryBall />
-          <LotteryBall />
-          <LotteryBall />
+          {lotteryBalls}
         </div>
-        <button className="LotteryButton">Draw Numbers</button>
+        <button className="LotteryButton" onClick={this.handleClick}>Draw Numbers</button>
       </div>
     )
   }

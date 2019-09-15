@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Lottery />
+    <Lottery max={9}/>
     </div>
   );
 }
