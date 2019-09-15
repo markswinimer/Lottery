@@ -28,16 +28,16 @@ font-family: 'Sofia', cursive; */
 }
 
 .LotteryBall {
-  font-size: 25px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 70px;
   font-weight: bold;
   color: white;
-  min-width: 50px;
-  height: 50px;
+  min-width: 70px;
+  height: 70px;
   border-radius: 50px;
   margin: 5% auto;
   background-color: #FF9900;
-  font-family: 'Sofia', cursive;
+  font-family: 'Allerta', sans-serif;
 }
 
 .LotteryButton {
